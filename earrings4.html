@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DUARELIO Jewelry</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
     * {
@@ -29,7 +29,7 @@
       border-bottom: 1px solid gold;
     }
 
-    header .logo {
+    .logo {
       font-size: 24px;
       font-weight: bold;
       color: gold;
@@ -71,88 +71,141 @@
       margin-left: auto;
     }
 
-    .page-title {
-      padding: 30px 25px 10px;
-    }
-
-    .page-title h1 {
-      font-size: 40px;
-    }
-
-    .ring-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      padding: 20px 25px 50px;
-      justify-items: center;
-    }
-
-    /* Updated border styling */
-    .ring-card {
-      text-align: center;
+    .product-container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #111;
-      padding: 20px;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    .product-image img {
+      max-width: 350px;
+      width: 100%;
+      border: 2px solid #444;
       border-radius: 10px;
-      width: 100%;
-      max-width: 300px;
-      border: 2px solid #ffd700; /* Golden border */
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Optional shadow effect */
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .ring-card:hover {
-      transform: scale(1.05); /* Slight scale on hover */
-      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6); /* Darker shadow on hover */
+    .product-details {
+      max-width: 400px;
+      margin-left: 30px;
     }
 
-    .ring-card img {
-      width: 100%;
-      max-width: 250px;
-      height: auto;
-      border-radius: 8px;
-      object-fit: cover;
+    .product-details h2 {
+      font-size: 28px;
     }
 
-    .ring-card p {
-      margin: 10px 0 5px;
+    .price {
+      color: #ffd700;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .quantity-control {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .quantity-control button {
+      background-color: #ffd700;
+      color: #000;
+      border: none;
+      padding: 5px 12px;
       font-weight: bold;
+      cursor: pointer;
     }
 
-    .ring-card span {
+    .quantity-control span {
+      margin: 0 10px;
+    }
+
+    .btn-cart, .btn-buy {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-cart {
+      background-color: #ffd700;
+      color: #000;
+    }
+
+    .btn-buy {
+      background-color: white;
+      color: #000;
+    }
+
+    .product-info {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+    }
+
+    .product-info li {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .recommendations {
+      padding: 30px 20px;
+    }
+
+    .recommendations h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .items {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .item {
+      text-align: center;
+      margin: 10px;
+    }
+
+    .item img {
+      width: 250px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .item p {
+      margin: 10px 0 5px;
+    }
+
+    .item span {
       color: #ffd700;
       font-size: 14px;
     }
 
-    .buy-btn {
+    .view-more-container {
+      text-align: center;
       margin-top: 10px;
-      padding: 8px 16px;
+    }
+
+    .view-more-btn {
       background-color: gold;
       color: black;
-      border: none;
-      border-radius: 4px;
+      padding: 8px 16px;
       font-weight: bold;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
+      font-size: 14px;
       transition: background-color 0.3s ease;
     }
 
-    .buy-btn:hover {
+    .view-more-btn:hover {
       background-color: #fff;
       color: gold;
-    }
-
-    @media (max-width: 900px) {
-      .ring-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .ring-grid {
-        grid-template-columns: 1fr;
-      }
     }
 
     footer {
@@ -178,6 +231,10 @@
     .footer-content > div:nth-child(1) {
       text-align: left;
       padding: 0 20px;
+    }
+
+    .footer-content > div:nth-child(1) i {
+      margin-right: 8px;
     }
 
     .footer-content > div:nth-child(2) {
@@ -252,10 +309,8 @@ body {
     transform: translateY(0);
   }
 }
-
   </style>
 </head>
-
 <body>
   <header>
     <div class="logo">DUARELIO</div>
@@ -271,72 +326,62 @@ body {
     </nav>
   </header>
 
-  <section class="page-title">
-    <h1>Rings</h1>
-  </section>
-
-  <section class="ring-grid">
-    <div class="ring-card">
-      <img src="./pictures/resizecom_a ring with some diamond.jpg" alt="Diamond Radiance Ring">
-      <p>Diamond Radiance Ring</p>
-      <span>₱ 17,900.00 PHP</span>
-      <a href="./ring1.html" class="buy-btn">Buy</a>
+  <!-- Product Section -->
+  <main class="product-container">
+    <div class="product-image">
+      <img src="./pictures/resizecom_earrings (3).jpg" alt="Orabelle Hoops" />
+      <div class="view-more-container">
+      </div>
     </div>
-
-    <div class="ring-card">
-      <img src="./pictures/resizecom_ring (1).jpg" alt="Twilight Diamonds Ring">
-      <p>Twilight Diamonds Ring</p>
-      <span>₱ 13,900.00 PHP</span>
-      <a href="./ring2.html" class="buy-btn">Buy</a>
+    <div class="product-details">
+      <h2>Orabelle Hoops</h2>
+      <p class="price">₱ 6,900.00 PHP</p>
+      <label>Quantity</label>
+      <div class="quantity-control">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+      <button class="btn-cart">Add to cart</button>
+      <button class="btn-buy">Buy it now</button>
+      <ul class="product-info">
+        <li>14K</li>
+        <li>APPROX .25ct Natural Diamond</li>
+        <li>2.2 grams</li>
+        <li>Size 6 Adjustable</li>
+        <li>RG-037</li>
+      </ul>
     </div>
+  </main>
 
-    <div class="ring-card">
-      <img src="./pictures/resizecom_a simple ring but elegant.jpg" alt="Solitaire Grace Ring">
-      <p>Solitaire Grace Ring</p>
-      <span>₱ 10,800.00 PHP</span>
-      <a href="./ring3.html" class="buy-btn">Buy</a>
-    </div>
-
-    <div class="ring-card">
-      <img src="./pictures/resizecom_a simple ring but elegant (1).jpg" alt="Minimal Radiance Ring">
-      <p>Minimal Radiance Ring</p>
-      <span>₱ 7,800.00 PHP</span>
-      <a href="./ring4.html" class="buy-btn">Buy</a>
-    </div>
-
-    <div class="ring-card">
-      <img src="./pictures/resizecom_wedding ring.jpg" alt="Golden Heirloom Ring">
-      <p>Golden Heirloom Ring</p>
-      <span>₱ 8,000.00 PHP</span>
-      <a href="./ring5.html" class="buy-btn">Buy</a>
-    </div>
-
-    <div class="ring-card">
-      <img src="./pictures/resizecom_a simple ring but elegant (2).jpg" alt="Clara Ring">
-      <p>Clara Ring</p>
-      <span>₱ 9,599.00 PHP</span>
-      <a href="./ring6.html" class="buy-btn">Buy</a>
-    </div>
-
-    <div class="ring-card">
-      <img src="./pictures/resizecom_resizecom_Unique Wave Pattern Couple Rings For Men Women Stainless Steel Ring Engagement Wedding Rings Jewelry - Male-6mm _ 5.jpg" alt="Couple Rings">
-      <p>Couple Rings</p>
-      <span>₱ 9,500.00 PHP</span>
-      <a href="./ring7.html" class="buy-btn">Buy</a>
-    </div>
-
-    <div class="ring-card">
-      <img src="./pictures/resizecom_resizecom_Creative Couple Band Inspirations.jpg" alt="Wedding Ring">
-      <p>Wedding Ring</p>
-      <span>₱ 15,000.00 PHP</span>
-      <a href="./ring8.html" class="buy-btn">Buy</a>
-    </div>
-
-    <div class="ring-card">
-      <img src="./pictures/resizecom_a simple ring.jpg" alt="Silvella Band">
-      <p>Silvella Band</p>
-      <span>₱ 7,900.00 PHP</span>
-      <a href="./ring9.html" class="buy-btn">Buy</a>
+  <!-- Recommendation Section -->
+  <section class="recommendations">
+    <h3>You may also like</h3>
+    <div class="items">
+      <div class="item">
+        <img src="./pictures/resizecom_a simple ring but elegant (2).jpg" alt="Clara Ring"/>
+        <p>Clara Ring</p>
+        <span>₱ 9,599.00 PHP</span>
+        <div class="view-more-container">
+            <a href="./ring.html" class="view-more-btn">View More</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./pictures/resizecom_a jewelry necklase.jpg" alt="Elara Necklace"/>
+        <p>Elara Lotus Necklace</p>
+        <span>₱ 14,700.00 PHP</span>
+        <div class="view-more-container">
+            <a href="./Necklase.html" class="view-more-btn">View More</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./pictures/resizecom_resizecom_download (6).jpg" alt="Sterling Earrings"/>
+        <p>Sterling Silver Earrings</p>
+        <span>₱ 9,599.00 PHP</span>
+        <div class="view-more-container">
+            <a href="./earrings.html" class="view-more-btn">View More</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -350,10 +395,10 @@ body {
       <div>
         <p>Shop:</p>
         <ul>
-          <li><a href="./homepage.html">Best Seller</a></li>
-          <li><a href="./homepage.html">New Arrival</a></li>
-          <li><a href="./jewelry.html">Fine Jewelry</a></li>
-        </ul>
+            <li><a href="./homepage.html">Best Seller</a></li>
+            <li><a href="./homepage.html">New Arrival</a></li>
+            <li><a href="./jewelry.html">Fine Jewelry</a></li>
+          </ul>
       </div>
       <div>
         <p>Visit Us:</p>

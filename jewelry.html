@@ -181,6 +181,24 @@ nav ul li.signup, nav ul li.signin {
     font-size: 1rem;
   }
 
+  .view-more-wrap .btn {
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: gold;
+    border: 3px solid gold; /* Make border thicker */
+    border-radius: 8px; /* Optional: more rounded corners */
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.view-more-wrap .btn:hover {
+    background-color: gold;
+    color: black;
+    border-color: white; /* Optional: change border color on hover */
+}
+
+
 /* style.css */
 * {
     margin: 0;
@@ -337,6 +355,19 @@ nav ul li.signup, nav ul li.signin {
     }
   }
   
+  /* Smooth fade-in from top when page loads */
+body {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeDownPage 0.5s ease-out forwards;
+}
+
+@keyframes fadeDownPage {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
     </style>
 
@@ -387,7 +418,9 @@ nav ul li.signup, nav ul li.signin {
           <p class="price">₱ 10,900.00 PHP</p>
         </div>
       </div>
-      <a class="btn" href="./ring.html">View More</a>
+      <div class="view-more-wrap">
+        <a class="btn" href="./ring.html">View More</a>
+      </div>
     </section>
 
     <!-- Earrings -->
@@ -410,7 +443,9 @@ nav ul li.signup, nav ul li.signin {
           <p class="price">₱ 6,700.00 PHP</p>
         </div>
       </div>
-      <a class="btn" href="./earrings.html">View More</a>
+      <div class="view-more-wrap">
+        <a class="btn" href="./earrings.html">View More</a>
+      </div>
     </section>
 
     <!-- Necklaces -->
@@ -433,7 +468,9 @@ nav ul li.signup, nav ul li.signin {
           <p class="price">₱ 10,700.00 PHP</p>
         </div>
       </div>
-      <a class="btn" href="./Necklase.html">View More</a>
+      <div class="view-more-wrap">
+        <a class="btn" href="./Necklase.html">View More</a>
+      </div>
     </section>
   </main>
     
@@ -448,9 +485,9 @@ nav ul li.signup, nav ul li.signin {
           <div>
             <p>Shop:</p>
             <ul>
-              <li><a href="#">Best Seller</a></li>
-              <li><a href="#">New Arrival</a></li>
-              <li><a href="#">Fine Jewelry</a></li>
+              <li><a href="./homepage.html">Best Seller</a></li>
+              <li><a href="./homepage.html">New Arrival</a></li>
+              <li><a href="./jewelry.html">Fine Jewelry</a></li>
             </ul>
           </div>
           <div>

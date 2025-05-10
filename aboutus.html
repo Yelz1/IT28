@@ -497,6 +497,20 @@ nav ul li.signup, nav ul li.signin {
       margin: 20px 0;
     }
   }
+
+  /* Smooth fade-in from top when page loads */
+body {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeDownPage 0.5s ease-out forwards;
+}
+
+@keyframes fadeDownPage {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   
 
     </style>
@@ -590,9 +604,9 @@ nav ul li.signup, nav ul li.signin {
           <div>
             <p>Shop:</p>
             <ul>
-              <li><a href="#">Best Seller</a></li>
-              <li><a href="#">New Arrival</a></li>
-              <li><a href="#">Fine Jewelry</a></li>
+              <li><a href="./homepage.html">Best Seller</a></li>
+              <li><a href="./homepage.html">New Arrival</a></li>
+              <li><a href="./jewelry.html">Fine Jewelry</a></li>
             </ul>
           </div>
           <div>

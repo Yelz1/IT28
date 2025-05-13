@@ -93,9 +93,11 @@ nav ul li.signup, nav ul li.signin {
 .hero-text {
     padding: 40px;
     display: inline-block;
-
-
+    color: black;
+    
 }
+
+
 
 .shop-btn {
     display: inline-block;

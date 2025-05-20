@@ -74,11 +74,11 @@ nav ul li.signup, nav ul li.signin {
 
 
 .hero {
-    background-image: url('./resizecom_create\ a\ jewelry\ website\ background.jpg'); /* Replace with your image path */
+    background-image: url('./resizecom_create a jewelry website background.jpg'); /* Replace with your image path */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;  /* Options: cover | contain | 100% 80% */
-    height: 500px;            /* Adjust height as needed */
+    background-size: cover;    /* Options: cover | contain | 100% 80% */
+    height: 500px;             /* Adjust height as needed */
     padding: 100px 40px;
     text-align: center;
     color: #000;
@@ -93,7 +93,7 @@ nav ul li.signup, nav ul li.signin {
 /* 📱 Responsive Adjustments */
 @media (max-width: 768px) {
     .hero {
-        background-size: cover;  /* You can change to contain or custom here */
+        background-size: cover;    /* You can change to contain or custom here */
         height: 300px;
         padding: 60px 20px;
     }
@@ -231,22 +231,6 @@ nav ul li.signup, nav ul li.signin {
 
 .ring-card {
   text-align: center;
-}
-.ring-card img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 8px;
-}
-.ring-card p {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-.ring-card span {
-  color: #ffd700;
-  font-size: 14px;
-}
-.ring-card {
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,6 +253,7 @@ nav ul li.signup, nav ul li.signin {
   color: #ffd700;
   font-size: 14px;
 }
+
 
 /* Responsive Grid */
 @media (max-width: 900px) {
@@ -377,7 +362,7 @@ nav ul li.signup, nav ul li.signin {
   
 
     </style>
-   
+    
 
 </head>
 <body>
@@ -385,82 +370,77 @@ nav ul li.signup, nav ul li.signin {
         <div class="logo">DUARELIO</div>
         <nav>
             <ul>
-              <li><a href="./homepage.html">Home</a></li>
-              <li><a href="./jewelry.html">Jewelry</a></li>
-              <li><a href="./aboutus.html">About Us</a></li>
-              <li><a href="./customization.html">Customization</a></li>
-              <!-- Sign up and Sign in with special styling -->
-              <li class="signup"><a href="./sign-up.html">Sign up</a></li>
-              <li class="signin"><a href="./sign-in.html">Sign in</a></li>
+              <li><a href="./index.php">Home</a></li>
+              <li><a href="./jewelry.php">Jewelry</a></li>
+              <li><a href="./aboutus.php">About Us</a></li>
+              <li class="signup"><a href="./signup.php">Sign up</a></li>
+              <li class="signin"><a href="./signin.php">Sign in</a></li>
             </ul>
         </nav>
     </header>
     
-    <!-- Page Title -->
-  <section class="page-title">
-    <h1>Rings</h1>
+    <section class="page-title">
+    <h1>Earrings</h1>
   </section>
 
-  <!-- Product Grid -->
   <section class="ring-grid">
-    <!-- 9 Product Items -->
     <div class="ring-card">
-      <img src="./pictures/resizecom_a ring with some diamond.jpg" alt="Diamond Radiance Ring">
-      <p>Diamond Radiance Ring</p>
-      <span>₱ 17,900.00 PHP</span>
-    </div>
-
-    <div class="ring-card">
-      <img src="./pictures/resizecom_ring (1).jpg" alt="Twilight Diamonds Ring">
-      <p>Twilight Diamonds Ring</p>
-      <span>₱ 13,900.00 PHP</span>
-    </div>
-
-    <div class="ring-card">
-      <img src="./pictures/resizecom_a simple ring but elegant.jpg" alt="Solitaire Grace Ring">
-      <p>Solitaire Grace Ring</p>
-      <span>₱ 10,800.00 PHP</span>
-    </div>
-
-    <div class="ring-card">
-      <img src="./pictures/resizecom_a simple ring but elegant (1).jpg" alt="Minimal Radiance Ring">
-      <p>Minimal Radiance Ring</p>
+      <img src="./pictures/resizecom_earrings (2).jpg" alt="Velvet Glow Earrings">
+      <p>Velvet Glow Earrings</p>
       <span>₱ 7,800.00 PHP</span>
     </div>
 
     <div class="ring-card">
-      <img src="./pictures/resizecom_wedding ring.jpg" alt="Golden Heirloom Ring">
-      <p>Golden Heirloom Ring</p>
-      <span>₱ 8,000.00 PHP</span>
+      <img src="./pictures/resizecom_a jewelry website background just a simple (1).jpg" alt="Florence Cushion Earrings">
+      <p>Florence Cushion Earrings</p>
+      <span>₱ 9,800.00 PHP</span>
     </div>
 
     <div class="ring-card">
-      <img src="./pictures/resizecom_a simple ring but elegant (2).jpg" alt="Clara Ring">
-      <p>Clara Ring</p>
-      <span>₱ 9,599.00 PHP</span>
+      <img src="./pictures/resizecom_earrings.jpg" alt="Ethernal Elegance Earrings">
+      <p>Ethernal Elegance Earrings</p>
+      <span>₱ 6,700.00 PHP</span>
     </div>
 
     <div class="ring-card">
-      <img src="./pictures/resizecom_resizecom_Unique Wave Pattern Couple Rings For Men Women Stainless Steel Ring Engagement Wedding Rings Jewelry - Male-6mm _ 5.jpg" alt="Couple Rings">
-      <p>Couple Rings</p>
-      <span>₱ 9,500.00 PHP</span>
+      <img src="./pictures/resizecom_earrings (3).jpg" alt="Orabelle Hoops">
+      <p>Orabelle Hoops</p>
+      <span>₱ 6,900.00 PHP</span>
     </div>
 
     <div class="ring-card">
-      <img src="./pictures/resizecom_resizecom_Creative Couple Band Inspirations.jpg" alt="Wedding Ring">
-      <p>Wedding Ring</p>
-      <span>₱ 15,000.00 PHP</span>
+      <img src="./pictures/resizecom_earrings (4).jpg" alt="Gilded Lace Earrings">
+      <p>Gilded Lace Earrings</p>
+      <span>₱ 5,799.00 PHP</span>
     </div>
 
     <div class="ring-card">
-      <img src="./pictures/resizecom_a simple ring.jpg" alt="Silvella Band">
-      <p>Silvella Band</p>
+      <img src="./pictures/resizecom_download (6).jpg" alt="Clara Ring">
+      <p>Sterling Silver Earrings</p>
+      <span>₱ 5,999.00 PHP</span>
+    </div>
+
+    <div class="ring-card">
+      <img src="./pictures/resizecom_Dainty Diamond Charm Hoop Earrings _ Minimalist Dangling Huggie Hoops _ Elegant Gold Earrings for Everyday Wear or Special Occasions.jpg" alt="Couple Rings">
+      <p>Diamond Charm Earrings</p>
       <span>₱ 7,900.00 PHP</span>
+    </div>
+
+    <div class="ring-card">
+      <img src="./pictures/resizecom_resizecom_Temu｜A Pair Of Pentagram Round Earrings, Stylish And Exquisite, Suitable For Daily Commuting And Banquets In Summer For Ladies, With Copper Inlaid Zirconia_.jpg" alt="Wedding Ring">
+      <p>Pentagram Round Earrings</p>
+      <span>₱ 12,900.00 PHP</span>
+    </div>
+
+    <div class="ring-card">
+      <img src="./pictures/resizecom_resizecom_Flower ear pin.jpg" alt="Silvella Band">
+      <p>Flower Pin Earrings</p>
+      <span>₱ 3,799.00 PHP</span>
     </div>
   </section>
 
 
-     <footer>
+      <footer>
         <div class="footer-content">
           <div>
             <div class="logo">DUARELIO</div>

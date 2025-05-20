@@ -72,13 +72,69 @@ nav ul li.signup, nav ul li.signin {
     margin-left: auto; /* Push these items to the right side */
 }
 
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 25px;
+  gap: 30px;
+}
 
+.about-left, .about-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-right img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 20px;
+}
+.cta button {
+  background: #FFD700;
+  color: black;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Guarantees */
+.guarantees {
+  text-align: center;
+  padding: 40px 20px;
+}
+.guarantees h2 {
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+.guarantee-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.guarantee-icons div {
+  max-width: 200px;
+}
+.guarantee-icons img {
+  width: 50px;
+  height: 50px;
+}
 .hero {
-    background-image: url('./resizecom_create\ a\ jewelry\ website\ background.jpg'); /* Replace with your image path */
+    background-image: url('./pictures/resizecom_just a simple jewelry background (1) (1).jpg'); /* Replace with your image path */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;  /* Options: cover | contain | 100% 80% */
-    height: 500px;            /* Adjust height as needed */
+    background-size: cover;    /* Options: cover | contain | 100% 80% */
+    height: 500px;             /* Adjust height as needed */
     padding: 100px 40px;
     text-align: center;
     color: #000;
@@ -93,7 +149,7 @@ nav ul li.signup, nav ul li.signin {
 /* 📱 Responsive Adjustments */
 @media (max-width: 768px) {
     .hero {
-        background-size: cover;  /* You can change to contain or custom here */
+        background-size: cover;    /* You can change to contain or custom here */
         height: 300px;
         padding: 60px 20px;
     }
@@ -116,71 +172,59 @@ nav ul li.signup, nav ul li.signin {
     font-weight: bold;
 }
 
-/* Login Page Styling */
-.login-page {
-    text-align: center;
-    padding: 40px 20px;
-  }
   
-  .login-page h1 {
-    color: #d4af37;
-    margin-bottom: 30px;
+  /* About Section */
+  .about-section {
+    padding: 30px 20px;
   }
-  
-  .login-form {
-    max-width: 500px;
-    margin: auto;
-    border: 1px solid #d4af37;
-    padding: 30px;
-    background-color: #111;
-    color: white;
-    text-align: left;
+  .about-text, .about-images {
+    margin-bottom: 20px;
   }
-  
-  .login-form label {
+  .about-images img {
+    width: 100%;
+    max-width: 300px;
     display: block;
-    margin: 15px 0 5px;
-    font-size: 13px;
-    text-transform: uppercase;
+    margin: 10px auto;
   }
   
-  .login-form input[type="text"],
-  .login-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #d4af37;
-    border: none;
-    border-radius: 6px;
-    color: black;
+  /* CTA Button */
+  .cta-section {
+    text-align: center;
+    padding: 20px;
   }
-  
-  .login-form button {
-    width: 100%;
-    margin-top: 20px;
-    padding: 12px;
-    background-color: #d4af37;
-    border: none;
+  .cta-button {
+    background-color: #ffd700;
+    color: #000;
+    padding: 15px 30px;
     font-weight: bold;
-    font-size: 16px;
-    border-radius: 5px;
+    border: none;
     cursor: pointer;
   }
   
-  .login-form .options {
+  /* Guarantee Section */
+  .guarantee-section {
+    background-color: #111;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .guarantee-section h2 {
+    color: #ffd700;
+    margin-bottom: 30px;
+  }
+  .guarantee-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .guarantee-box {
+    margin: 10px;
+    max-width: 200px;
+  }
+  .guarantee-box p {
     margin-top: 10px;
     font-size: 14px;
   }
-  
-  .login-form .links {
-    margin-top: 20px;
-    font-size: 14px;
-    text-align: center;
-  }
-  
-  .login-form .links a {
-    color: #fff;
-    text-decoration: underline;
-  }
+
 
 
 /* style.css */
@@ -246,6 +290,121 @@ nav ul li.signup, nav ul li.signin {
     background-color: #fff;
     color: gold;
   }
+
+  .about {
+  padding: 60px 40px;
+  background-color: #000;
+  color: #fff;
+}
+
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.about-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-row .text {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-row .image {
+  flex: 1;
+}
+
+.about-row .image img {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+}
+
+
+.about .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about .image img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid gold;
+  padding: 5px;
+  background-color: #111;
+}
+
+@media (max-width: 768px) {
+  .about-row,
+  .about-row.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .image,
+  .about .text {
+    width: 100%;
+  }
+
+  .about .image img {
+    max-width: 90%;
+  }
+}
+
+
+  .guarantees {
+  background-color: #000;
+  color: gold;
+  padding: 30px 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid gold;
+}
+
+.guarantees h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: gold;
+  letter-spacing: 1px;
+}
+
+.guarantee-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.guarantee-item {
+  flex: 1 1 200px;
+  text-align: center;
+  min-width: 180px;
+}
+
+.guarantee-item img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.guarantee-item p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: gold;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+
+
   
   footer {
     background-color: #111;
@@ -341,7 +500,7 @@ nav ul li.signup, nav ul li.signin {
   
 
     </style>
-   
+    
 
 </head>
 <body>
@@ -349,41 +508,71 @@ nav ul li.signup, nav ul li.signin {
         <div class="logo">DUARELIO</div>
         <nav>
             <ul>
-              <li><a href="./homepage.html">Home</a></li>
-              <li><a href="./jewelry.html">Jewelry</a></li>
-              <li><a href="./aboutus.html">About Us</a></li>
-              <li><a href="./customization.html">Customization</a></li>
-              <!-- Sign up and Sign in with special styling -->
-              <li class="signup"><a href="./sign-up.html">Sign up</a></li>
-              <li class="signin"><a href="./sign-in.html">Sign in</a></li>
+              <li><a href="./index.php">Home</a></li>
+              <li><a href="./jewelry.php">Jewelry</a></li>
+              <li><a href="./aboutus.php">About Us</a></li>
+              <li class="signup"><a href="./signup.php">Sign up</a></li>
+              <li class="signin"><a href="./signin.php">Sign in</a></li>
             </ul>
         </nav>
     </header>
     
+    <section class="hero">
+    <div class="hero-text">
+      <h1>About Us</h1>
+      <p>Welcome to Daurelio — Where Elegance Meets Timeless Craftsmanship.</p>
+    </div>
+  </section>
 
-    <main class="login-page">
-        <h1>Sign in to Daurelio</h1>
-        <form class="login-form">
-          <label for="email">USER NAME OR EMAIL</label>
-          <input type="text" id="email" name="email" required />
-    
-          <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="password" required />
-    
-          <button type="submit">Log in</button>
-    
-          <div class="options">
-            <label><input type="checkbox" /> Remember me</label>
-          </div>
-    
-          <div class="links">
-            <p>Don’t have an account? <a href="#">Sign up</a></p>
-            <p><a href="#">Forgot Password?</a></p>
-          </div>
-        </form>
-      </main>
+  <section class="about">
+    <div class="about-row">
+      <div class="text">
+        <p> DUARELIO is a jewelry business that focuses on creating beautiful and personalized pieces for every style and occasion. We offer ready-made jewelry as well as customization options, so customers can design something meaningful and unique to them. 
 
-    
+          </p>
+        <p>Whether it’s a gift, a special keepsake, or something to treat yourself, our goal is to make jewelry that tells a story. </p>
+      </div>
+      <div class="image">
+        <img src="./pictures/resizecom_jewelry for a websites.jpg" alt="Jewelry 1">
+      </div>
+    </div>
+  
+    <div class="about-row reverse">
+      <div class="image">
+        <img src="./pictures/resizecom_just a simple jewelry background (1).jpg" alt="Jewelry 2">
+      </div>
+      <div class="text">
+        <p> At DUARELIO, we believe everyone deserves to wear something that feels special and truly their own. With care, creativity, and a love for detail, we turn simple ideas into something you’ll love to wear every day.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <section class="cta">
+    <a href="./jewelry.php"><button>START SHOPPING</button></a>
+  </section>
+  
+
+  <section class="guarantees">
+    <h2>DAURELIO GUARANTEE</h2>
+    <div class="guarantee-icons">
+      <div class="guarantee-item">
+        <img src="./pictures/money-back-guarantee.png" alt="100% Money Back" />
+        <p><strong>100% MONEY BACK</strong><br>GUARANTEE</p>
+      </div>
+      <div class="guarantee-item">
+        <img src="./pictures/time.png" alt="Lifetime Warranty" />
+        <p><strong>LIFE TIME</strong><br>WARRANTY</p>
+      </div>
+      <div class="guarantee-item">
+        <img src="./pictures/safe.png" alt="Shipping Guarantee" />
+        <p><strong>SAFE & INSURED SHIPPING</strong><br>GUARANTEE</p>
+      </div>
+    </div>
+  </section>
+  
     <footer>
         <div class="footer-content">
           <div>

@@ -6,7 +6,7 @@
     <title>DUARELIO Jewelry</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
+    
     <style>
 
 *{
@@ -72,69 +72,15 @@ nav ul li.signup, nav ul li.signin {
     margin-left: auto; /* Push these items to the right side */
 }
 
-/* About Section */
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px 25px;
-  gap: 30px;
-}
 
-.about-left, .about-right {
-  flex: 1;
-  min-width: 280px;
-}
 
-.about-right img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
 
-/* CTA */
-.cta {
-  text-align: center;
-  padding: 20px;
-}
-.cta button {
-  background: #FFD700;
-  color: black;
-  font-weight: bold;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* Guarantees */
-.guarantees {
-  text-align: center;
-  padding: 40px 20px;
-}
-.guarantees h2 {
-  color: #FFD700;
-  margin-bottom: 20px;
-}
-.guarantee-icons {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-.guarantee-icons div {
-  max-width: 200px;
-}
-.guarantee-icons img {
-  width: 50px;
-  height: 50px;
-}
 .hero {
-    background-image: url('./pictures/resizecom_just\ a\ simple\ jewelry\ background\ \(1\)\ \(1\).jpg'); /* Replace with your image path */
+    background-image: url('./pictures/resizecom_create a jewelry website background.jpg'); /* Replace with your image path */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;  /* Options: cover | contain | 100% 80% */
-    height: 500px;            /* Adjust height as needed */
+    background-size: cover;    /* Options: cover | contain | 100% 80% */
+    height: 500px;             /* Adjust height as needed */
     padding: 100px 40px;
     text-align: center;
     color: #000;
@@ -149,7 +95,7 @@ nav ul li.signup, nav ul li.signin {
 /* 📱 Responsive Adjustments */
 @media (max-width: 768px) {
     .hero {
-        background-size: cover;  /* You can change to contain or custom here */
+        background-size: cover;    /* You can change to contain or custom here */
         height: 300px;
         padding: 60px 20px;
     }
@@ -172,60 +118,68 @@ nav ul li.signup, nav ul li.signin {
     font-weight: bold;
 }
 
-  
-  /* About Section */
-  .about-section {
-    padding: 30px 20px;
-  }
-  .about-text, .about-images {
+/* Category Sections */
+/* Category Sections */
+.category {
+    padding: 60px 40px;
+    background-color: #000;
+    text-align: center;
+}
+.category h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    color: gold;
+    font-size: 2.5rem;
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+    margin-bottom: 40px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    justify-items: center;
     margin-bottom: 20px;
-  }
-  .about-images img {
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: 10px auto;
-  }
-  
-  /* CTA Button */
-  .cta-section {
-    text-align: center;
-    padding: 20px;
-  }
-  .cta-button {
-    background-color: #ffd700;
-    color: #000;
-    padding: 15px 30px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Guarantee Section */
-  .guarantee-section {
+}
+.product {
     background-color: #111;
+    border: 1px solid gold;
+    padding: 20px;
+    max-width: 300px;
     text-align: center;
-    padding: 40px 20px;
-  }
-  .guarantee-section h2 {
-    color: #ffd700;
-    margin-bottom: 30px;
-  }
-  .guarantee-items {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  .guarantee-box {
-    margin: 10px;
-    max-width: 200px;
-  }
-  .guarantee-box p {
-    margin-top: 10px;
-    font-size: 14px;
-  }
+    flex-direction: column;
+}
 
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
 
+}
+
+ 
+.product h3 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.product .price {
+    color: gold;
+    font-size: 1rem;
+}
+ 
+/* View More Button */
+.view-more-wrap {
+    text-align: center;
+    margin-top: 20px;
+}
+.view-more-wrap .btn {
+    padding: 10px 30px;
+    font-size: 1rem;
+}
 
 /* style.css */
 * {
@@ -290,121 +244,6 @@ nav ul li.signup, nav ul li.signin {
     background-color: #fff;
     color: gold;
   }
-
-  .about {
-  padding: 60px 40px;
-  background-color: #000;
-  color: #fff;
-}
-
-.about-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 60px;
-}
-
-.about-row.reverse {
-  flex-direction: row-reverse;
-}
-
-.about-row .text {
-  flex: 1;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.about-row .image {
-  flex: 1;
-}
-
-.about-row .image img {
-  width: 50%;
-  max-width: 500px;
-  height: auto;
-}
-
-
-.about .image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.about .image img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid gold;
-  padding: 5px;
-  background-color: #111;
-}
-
-@media (max-width: 768px) {
-  .about-row,
-  .about-row.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about .image,
-  .about .text {
-    width: 100%;
-  }
-
-  .about .image img {
-    max-width: 90%;
-  }
-}
-
-
-  .guarantees {
-  background-color: #000;
-  color: gold;
-  padding: 30px 20px 10px;
-  text-align: center;
-  border-bottom: 1px solid gold;
-}
-
-.guarantees h2 {
-  font-size: 22px;
-  margin-bottom: 25px;
-  color: gold;
-  letter-spacing: 1px;
-}
-
-.guarantee-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
-  gap: 20px;
-}
-
-.guarantee-item {
-  flex: 1 1 200px;
-  text-align: center;
-  min-width: 180px;
-}
-
-.guarantee-item img {
-  width: 80px;
-  height: auto;
-  margin-bottom: 8px;
-}
-
-.guarantee-item p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: gold;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin: 0;
-}
-
-
   
   footer {
     background-color: #111;
@@ -500,7 +339,6 @@ nav ul li.signup, nav ul li.signin {
   
 
     </style>
-   
 
 </head>
 <body>
@@ -508,78 +346,93 @@ nav ul li.signup, nav ul li.signin {
         <div class="logo">DUARELIO</div>
         <nav>
             <ul>
-              <li><a href="./homepage.html">Home</a></li>
-              <li><a href="./jewelry.html">Jewelry</a></li>
-              <li><a href="./aboutus.html">About Us</a></li>
-              <li><a href="./customization.html">Customization</a></li>
-              <!-- Sign up and Sign in with special styling -->
-              <li class="signup"><a href="./sign-up.html">Sign up</a></li>
-              <li class="signin"><a href="./sign-in.html">Sign in</a></li>
+              <li><a href="./index.php">Home</a></li>
+              <li><a href="./jewelry.php">Jewelry</a></li>
+              <li><a href="./aboutus.php">About Us</a></li>
+              <li><a href="./customization.php">Customization</a></li>
+              <li class="signup"><a href="./signup.php">Sign up</a></li>
+              <li class="signin"><a href="./signin.php">Sign in</a></li>
             </ul>
         </nav>
     </header>
     
-    <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>About Us</h1>
-      <p>Welcome to Daurelio — Where Elegance Meets Timeless Craftsmanship.</p>
-    </div>
-  </section>
 
-  <section class="about">
-    <!-- Row 1: Text left, Image right -->
-    <div class="about-row">
-      <div class="text">
-        <p> DUARELIO is a jewelry business that focuses on creating beautiful and personalized pieces for every style and occasion. We offer ready-made jewelry as well as customization options, so customers can design something meaningful and unique to them. 
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Wear Your Story</h1>
+            <p><strong>DUARELIO</strong> is a jewelry business that focuses on creating beautiful and personalized pieces for every style and occasion.</p>
+        </div>
+    </section>
 
-          </p>
-        <p>Whether it’s a gift, a special keepsake, or something to treat yourself, our goal is to make jewelry that tells a story. </p>
+    <main>
+    <section class="category">
+      <h2>Rings</h2>
+      <div class="products">
+        <div class="product">
+          <img src="./pictures/resizecom_a ring with some diamond.jpg" alt="Diamond Radiance Ring">
+          <h3>Diamond Radiance Ring</h3>
+          <p class="price">₱ 17,900.00 PHP</p>
+        </div>
+        <div class="product">
+          <img src="./pictures/resizecom_ring (1).jpg" alt="Twilight Elegance Ring">
+          <h3>Twilight Elegance Ring</h3>
+          <p class="price">₱ 13,900.00 PHP</p>
+        </div>
+        <div class="product">
+          <img src="./pictures/resizecom_a simple ring but elegant.jpg" alt="Solitaire Grace Ring">
+          <h3>Solitaire Grace Ring</h3>
+          <p class="price">₱ 10,900.00 PHP</p>
+        </div>
       </div>
-      <div class="image">
-        <img src="./pictures/resizecom_jewelry for a websites.jpg" alt="Jewelry 1">
-      </div>
-    </div>
-  
-    <!-- Row 2: Image left, Text right -->
-    <div class="about-row reverse">
-      <div class="image">
-        <img src="./pictures/resizecom_just a simple jewelry background (1).jpg" alt="Jewelry 2">
-      </div>
-      <div class="text">
-        <p> At DUARELIO, we believe everyone deserves to wear something that feels special and truly their own. With care, creativity, and a love for detail, we turn simple ideas into something you’ll love to wear every day.</p>
-      </div>
-    </div>
-  </section>
-  
-  
-  
+      <a class="btn" href="./ring.php">View More</a>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta">
-    <a href="./jewelry.html"><button>START SHOPPING</button></a>
-  </section>
-  
+    <section class="category">
+      <h2>Earrings</h2>
+      <div class="products">
+        <div class="product">
+          <img src="./pictures/resizecom_earrings (2).jpg" alt="Valeria Glow Earrings">
+          <h3>Velvet Glow Earrings</h3>
+          <p class="price">₱ 7,800.00 PHP</p>
+        </div>
+        <div class="product">
+          <img src="./pictures/resizecom_a jewelry website background just a simple (1).jpg" alt="Florence Opulence Earrings">
+          <h3>Florence Cushion Earrings</h3>
+          <p class="price">₱ 9,800.00 PHP</p>
+        </div>
+        <div class="product">
+          <img src="./pictures/resizecom_earrings.jpg" alt="Ethereal Elegance Earrings">
+          <h3>Ethereal Elegance Earrings</h3>
+          <p class="price">₱ 6,700.00 PHP</p>
+        </div>
+      </div>
+      <a class="btn" href="./earrings.php">View More</a>
+    </section>
 
-  <!-- Guarantees -->
-  <section class="guarantees">
-    <h2>DAURELIO GUARANTEE</h2>
-    <div class="guarantee-icons">
-      <div class="guarantee-item">
-        <img src="./pictures/money-back-guarantee.png" alt="100% Money Back" />
-        <p><strong>100% MONEY BACK</strong><br>GUARANTEE</p>
+    <section class="category">
+      <h2>Necklaces</h2>
+      <div class="products">
+        <div class="product">
+          <img src="./pictures/resizecom_just a simple necklase with a jewelry.jpg" alt="Amethyst Glow Necklace">
+          <h3>Amethyst Glow Necklace</h3>
+          <p class="price">₱ 10,800.00 PHP</p>
+        </div>
+        <div class="product">
+          <img src="./pictures/resizecom_a jewelry necklase.jpg" alt="Emperor Garnet Necklace">
+          <h3>Emperess Garnet Necklace</h3>
+          <p class="price">₱ 10,700.00 PHP</p>
+        </div>
+        <div class="product">
+          <img src="./pictures/resizecom_just a simple necklase with a jewelry (1).jpg" alt="Valencia Necklace">
+          <h3>Valencia Necklace</h3>
+          <p class="price">₱ 10,700.00 PHP</p>
+        </div>
       </div>
-      <div class="guarantee-item">
-        <img src="./pictures/time.png" alt="Lifetime Warranty" />
-        <p><strong>LIFE TIME</strong><br>WARRANTY</p>
-      </div>
-      <div class="guarantee-item">
-        <img src="./pictures/safe.png" alt="Shipping Guarantee" />
-        <p><strong>SAFE & INSURED SHIPPING</strong><br>GUARANTEE</p>
-      </div>
-    </div>
-  </section>
-  
+      <a class="btn" href="./Necklase.php">View More</a>
+    </section>
+  </main>
+    
+
     <footer>
         <div class="footer-content">
           <div>

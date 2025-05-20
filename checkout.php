@@ -7,7 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <style>
+
+  <style>
 
 *{
     margin: 0;
@@ -72,106 +73,108 @@ nav ul li.signup, nav ul li.signin {
     margin-left: auto; /* Push these items to the right side */
 }
 
-main {
-    text-align: center;
+
+/* Product Section */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
     padding: 40px 20px;
+    justify-content: center;
+  }
+  .product-image img {
+    max-width: 350px;
+    width: 200%;
+    border: 2px solid #444;
+    border-radius: 10px;
+  }
+  .product-details {
+    max-width: 400px;
+    margin-left: 30px;
+  }
+  .product-details h2 {
+    font-size: 28px;
+  }
+  .price {
+    color: #ffd700;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .quantity-control button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 5px 12px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .quantity-control span {
+    margin: 0 10px;
   }
   
-  h1 {
-    margin-bottom: 30px;
-    color: gold;
-  }
-  
-  form {
-    max-width: 900px;
-    margin: auto;
-    border: 1px solid #d4af37;
-    padding: 30px;
-    background-color: #111;
-  }
-  
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    text-align: left;
-  }
-  
-  .form-grid label {
+  .btn-cart, .btn-buy {
     display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-cart {
+    background-color: #ffd700;
+    color: #000;
+  }
+  .btn-buy {
+    background-color: white;
+    color: #000;
+  }
+  
+  .product-info {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  .product-info li {
     margin-bottom: 5px;
     font-size: 14px;
   }
   
-  .form-grid input,
-  .form-grid textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    background-color: #d4af37;
-    color: #000;
+  /* Recommendations */
+  .recommendations {
+    padding: 30px 20px;
   }
-  
-  .full-width {
-    grid-column: span 2;
+  .recommendations h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
-  
-  button {
-    margin-top: 20px;
-    padding: 12px 30px;
-    background-color: #d4af37;
-    border: none;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+  .items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
-  
-
-
-.hero {
-    background-image: url('./resizecom_create\ a\ jewelry\ website\ background.jpg'); /* Replace with your image path */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;  /* Options: cover | contain | 100% 80% */
-    height: 500px;            /* Adjust height as needed */
-    padding: 100px 40px;
+  .item {
     text-align: center;
-    color: #000;
-    position: relative;
-}
+    margin: 10px;
+  }
+  .item img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .item p {
+    margin: 10px 0 5px;
+  }
+  .item span {
+    color: #ffd700;
+    font-size: 14px;
+  }
 
-/* 🔁 Optionally use one of these background-size alternatives: */
-
-/* background-size: contain;   // Keeps full image visible, may leave empty space */
-/* background-size: 100% 80%;  // Custom width and height */
-
-/* 📱 Responsive Adjustments */
-@media (max-width: 768px) {
-    .hero {
-        background-size: cover;  /* You can change to contain or custom here */
-        height: 300px;
-        padding: 60px 20px;
-    }
-}
-
-.hero-text {
-    padding: 40px;
-    display: inline-block;
-
-
-}
-
-.shop-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: gold;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 
 
@@ -332,55 +335,73 @@ main {
   }
   
 
-    </style>
-    
+  </style> 
+
+
 </head>
 <body>
     <header>
         <div class="logo">DUARELIO</div>
         <nav>
             <ul>
-              <li><a href="./homepage.html">Home</a></li>
-              <li><a href="./jewelry.html">Jewelry</a></li>
-              <li><a href="./aboutus.html">About Us</a></li>
-              <li><a href="./customization.html">Customization</a></li>
-              <!-- Sign up and Sign in with special styling -->
-              <li class="signup"><a href="./sign-up.html">Sign up</a></li>
-              <li class="signin"><a href="./sign-in.html">Sign in</a></li>
+              <li><a href="./index.php">Home</a></li>
+              <li><a href="./jewelry.php">Jewelry</a></li>
+              <li><a href="./aboutus.php">About Us</a></li>
+              <li class="signup"><a href="./signup.php">Sign up</a></li>
+              <li class="signin"><a href="./signin.php">Sign in</a></li>
             </ul>
         </nav>
     </header>
     
+    <main class="product-container">
+    <div class="product-image">
+      <img src="./pictures/resizecom_a ring with some diamond (1).jpg" alt="Diamond Radiance Ring" />
+    </div>
+    <div class="product-details">
+      <h2>Diamond Radiance Ring</h2>
+      <p class="price">₱ 17,900.00 PHP</p>
 
-    <main>
-        <h1>We Customize Jewelry</h1>
-        <form>
-          <div class="form-grid">
-            <div><label>First Name</label><input type="text" /></div>
-            <div><label>Last Name</label><input type="text" /></div>
-    
-            <div><label>Email</label><input type="email" /></div>
-            <div><label>Type of Jewelry</label><input type="text" /></div>
-    
-            <div><label>Type of Material</label><input type="text" /></div>
-            <div><label>Address</label><input type="text" /></div>
-    
-            <div><label>City</label><input type="text" /></div>
-            <div><label>Province</label><input type="text" /></div>
-    
-            <div><label>Zip code</label><input type="text" /></div>
-            <div><label>Country</label><input type="text" /></div>
-    
-            <div class="full-width">
-              <label>Customization Details</label>
-              <textarea rows="4"></textarea>
-            </div>
-          </div>
-          <button type="submit">SUBMIT</button>
-        </form>
-      </main>
+      <label>Quantity</label>
+      <div class="quantity-control">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
 
-    
+      <button class="btn-cart">Add to cart</button>
+      <button class="btn-buy">Buy it now</button>
+
+      <ul class="product-info">
+        <li>14K</li>
+        <li>APPROX .25ct Natural Diamond</li>
+        <li>2.2 grams</li>
+        <li>Size 6 Adjustable</li>
+        <li>RG-037</li>
+      </ul>
+    </div>
+  </main>
+
+  <section class="recommendations">
+    <h3>You may also like</h3>
+    <div class="items">
+      <div class="item">
+        <img src="./pictures/resizecom_a simple ring but elegant (2).jpg" alt="Clara Ring"/>
+        <p>Clara Ring</p>
+        <span>₱ 9,599.00 PHP</span>
+      </div>
+      <div class="item">
+        <img src="./pictures/resizecom_a jewelry necklase.jpg" alt="Elara Necklace"/>
+        <p>Elara Lotus Necklace</p>
+        <span>₱ 14,700.00 PHP</span>
+      </div>
+      <div class="item">
+        <img src="./pictures/resizecom_resizecom_download (6).jpg" alt="Sterling Earrings"/>
+        <p>Sterling Silver Earrings</p>
+        <span>₱ 9,599.00 PHP</span>
+      </div>
+    </div>
+  </section>
+
     <footer>
         <div class="footer-content">
           <div>
